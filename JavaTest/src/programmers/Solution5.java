@@ -6,6 +6,7 @@ public class Solution5 {
 	public static void main(String[] args) {
 		int[] arr1 = { 4, 4, 4, 3, 3 };
 		int[] arr2 = { 1, 1, 3, 3, 0, 1, 1 };
+		
 		int[] answer = {};
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		int check = -1010101010;
