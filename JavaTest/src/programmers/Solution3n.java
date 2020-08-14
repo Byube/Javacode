@@ -12,28 +12,8 @@ public class Solution3n {
 		System.out.println(answer);
 	}
 	public static int solution(int n, int[] lost, int[] reserve) {
-		int answer = n - lost.length;
-		for (int i = 0; i < reserve.length; i++) {
-			boolean check = false;
-			int j = 0;
-			while (!check) {
-				if(j==lost.length) break;
-				if(reserve[i]==lost[j]){
-					reserve[i] = -1;
-					check = true;
-				} else if (reserve[i] - 1 == lost[j]) {
-					reserve[i] = -1;
-					check = true;
-				} else if (reserve[i] + 1 == lost[j]) {
-					reserve[i] = -1;
-					check = true;
-				}
-				else {
-					j++;
-				}
-			}
-			if(!check) answer++;
-		}
+		int answer = n;
+		
 		
 		return answer;
 	}
